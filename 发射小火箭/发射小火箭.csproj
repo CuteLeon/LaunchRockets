@@ -47,6 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuildingResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildingResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnvironmentResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ExhaustPlumeResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExhaustPlumeResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,21 +69,36 @@
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IMove.cs" />
-    <Compile Include="IPathPoint.cs" />
-    <Compile Include="Model\View.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\Rocket.cs" />
-    <Compile Include="Model\Rockets.cs" />
-    <Compile Include="Model\World.cs" />
-    <EmbeddedResource Include="Resource\BuildingResource.resx">
+    <Compile Include="Rocket.cs" />
+    <Compile Include="RocketResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RocketResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rockets.cs" />
+    <Compile Include="SkyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TreeResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TreeResource.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuildingResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BuildingResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource\EnvironmentResource.resx">
+    <EmbeddedResource Include="EnvironmentResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnvironmentResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource\ExhaustPlumeResource.resx">
+    <EmbeddedResource Include="ExhaustPlumeResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExhaustPlumeResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
@@ -83,14 +113,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Resource\RocketResource.resx">
+    <EmbeddedResource Include="RocketResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RocketResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource\SkyResource.resx">
+    <EmbeddedResource Include="SkyResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SkyResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource\TreeResource.resx">
+    <EmbeddedResource Include="TreeResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TreeResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

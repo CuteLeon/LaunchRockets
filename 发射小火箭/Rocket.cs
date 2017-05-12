@@ -10,7 +10,7 @@ namespace 发射小火箭
     /// <summary>
     /// 小火箭
     /// </summary>
-    class Rocket:IMove,IPathPoint
+    class Rocket:IMove
     {
         /// <summary>
         /// 小火箭的所有种类总数
@@ -59,12 +59,6 @@ namespace 发射小火箭
         {
             //throw new NotImplementedException();
             Location.X += 5;
-        }
-
-        public void CreateBezierPoints()
-        {
-            //throw new NotImplementedException();
-            //最后一个路径点需要在屏幕边缘，撞击边缘，小火箭炸毁
         }
     }
 }
