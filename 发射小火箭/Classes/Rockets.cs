@@ -72,11 +72,12 @@ namespace 发射小火箭
             //    NewRocket.CurvePoints[Index] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
             //NewRocket.CurvePoints[6] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
 
-            NewRocket.CurvePoints = new PointF[4];
-            NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X, NewRocket.Location.Y);
-            NewRocket.CurvePoints[1] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
-            NewRocket.CurvePoints[2] = new PointF(IndexRandom.Next(in_WorldSize.Width), IndexRandom.Next(GroundTop));
-            NewRocket.CurvePoints[3] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
+            NewRocket.CurvePoints = new PointF[5];
+            NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X, in_WorldSize .Height );
+            NewRocket.CurvePoints[1] = new PointF(NewRocket.Location.X, NewRocket.Location.Y);
+            NewRocket.CurvePoints[2] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
+            NewRocket.CurvePoints[3] = new PointF(IndexRandom.Next(in_WorldSize.Width), IndexRandom.Next(GroundTop));
+            NewRocket.CurvePoints[4] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
             NewRocket.CurvePoints = CreateBezierPoints(NewRocket.CurvePoints);
             in_Rockets.Add(NewRocket);
             return DrawXPoint + NewRocket.Width;
@@ -93,7 +94,7 @@ namespace 发射小火箭
         /// </summary>
         public new void Update()
         {
-            foreach (Rocket rocket in in_Rockets)
+            foreach(Rocket rocket in in_Rockets)
             {
                 rocket.Move();
             }
@@ -143,7 +144,8 @@ namespace 发射小火箭
                     //foreach (PointF P in Element.CurvePoints)
                     //    MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
                 }
-                MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
+                //Debug:显示火箭个数
+                //MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
             }
             return Map;
         }
@@ -153,7 +155,7 @@ namespace 发射小火箭
             PointF[] MyPoints = new PointF[] { };
             using (GraphicsPath MyGraphicsPath = new GraphicsPath())
             {
-                MyGraphicsPath.AddCurve(KeyPoint);
+                MyGraphicsPath.AddCurve(KeyPoint, 1,3, (float)0.5);
                 MyGraphicsPath.Flatten();
                 MyPoints = MyGraphicsPath.PathPoints;
             }
