@@ -29,20 +29,20 @@ namespace 发射小火箭
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = GameMap.CreateNewMap();
+            this.BackgroundImage = BitmapController.MergeBitmaps(GameMap.CreateNewMap(), RocketList.CreateNewRockets());
         }
 
         private void GameForm_MouseClick(object sender, MouseEventArgs e)
         {
             this.BackgroundImage.Dispose();
-            this.BackgroundImage = GameMap.CreateNewMap();
+            this.BackgroundImage =BitmapController.MergeBitmaps( GameMap.CreateNewMap(), RocketList.CreateNewRockets());
         }
 
         private void GameEngine_Tick(object sender, EventArgs e)
         {
             //return;
             this.BackgroundImage.Dispose();
-            this.BackgroundImage = GameMap.UpdateMap();
+            this.BackgroundImage = BitmapController.MergeBitmaps(GameMap.UpdateMap(), RocketList.UpdateRockets());
             GC.Collect();
         }
     }

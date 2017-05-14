@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Drawing.Drawing2D;
 
 namespace 发射小火箭
 {
@@ -21,7 +22,9 @@ namespace 发射小火箭
         /// <summary>
         /// 构造函数
         /// </summary>
-        public Rockets(Size WorldSize):base(WorldSize){}
+        public Rockets(Size WorldSize):base(WorldSize){
+            CreateNewRockets();
+        }
 
         /// <summary>
         /// 小火箭索引器
@@ -58,27 +61,46 @@ namespace 发射小火箭
         /// <summary>
         /// 构造新的小火箭加入小火箭列表
         /// </summary>
-        private void CreateNewRocket()
+        private int CreateNewRocket(int DrawXPoint)
         {
-            try
-            {
-                string RocketImageName = "Rocket_" + new Random().Next(Rocket.RocketTypeCount).ToString();
-                in_Rockets.Add(new Rocket(RocketImageName,new Point(new Random().Next(in_WorldSize.Width), GroundTop)));
-            }
-            catch (Exception ex) {
-                Debug.Print("创建新的小火箭时出错："+ ex.Message);
-            }
+            DrawXPoint += IndexRandom.Next(150);
+            string RocketImageName = "Rocket_" + IndexRandom.Next(Rocket.RocketTypeCount).ToString();
+            Rocket NewRocket = new Rocket(RocketImageName, new Point(DrawXPoint, GroundTop));
+            //NewRocket.CurvePoints = new PointF[7];
+            //NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X ,NewRocket.Location.Y);
+            //for (int Index = 1; Index < 6; Index++)
+            //    NewRocket.CurvePoints[Index] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
+            //NewRocket.CurvePoints[6] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
+
+            NewRocket.CurvePoints = new PointF[4];
+            NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X, NewRocket.Location.Y);
+            NewRocket.CurvePoints[1] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
+            NewRocket.CurvePoints[2] = new PointF(IndexRandom.Next(in_WorldSize.Width), IndexRandom.Next(GroundTop));
+            NewRocket.CurvePoints[3] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
+            NewRocket.CurvePoints = CreateBezierPoints(NewRocket.CurvePoints);
+            in_Rockets.Add(NewRocket);
+            return DrawXPoint + NewRocket.Width;
+        }
+
+        public Bitmap UpdateRockets()
+        {
+            Update();
+            return DrawRockets();
         }
 
         /// <summary>
         /// 更新所有小火箭的状态
         /// </summary>
-        public void UpdateRockets()
+        public new void Update()
         {
-            foreach (Rocket rocket in GetRocketAlive())
+            foreach (Rocket rocket in in_Rockets)
             {
                 rocket.Move();
             }
+            if (in_Rockets.Count > 0)
+                in_Rockets.RemoveAll(rocket=>rocket.PointIndex>=rocket.CurvePoints.Length);
+
+            if (in_Rockets.Count > 0) while (in_Rockets.Last().Location.X + in_Rockets.Last().Width < in_WorldSize.Width) CreateNewRocket((int)in_Rockets.Last().Location.X + in_Rockets.Last().Width);
         }
 
         /// <summary>
@@ -95,11 +117,47 @@ namespace 发射小火箭
             }
         }
 
-        public void CreateNewRockets()
+        public Bitmap CreateNewRockets()
         {
             in_Rockets = new List<Rocket>();
             int DrawXPoint = 0;
+            while(DrawXPoint<in_WorldSize.Width)
+                DrawXPoint = CreateNewRocket(DrawXPoint);
+
+            return DrawRockets();
         }
 
+        public Bitmap DrawRockets()
+        {
+            Bitmap Map = new Bitmap(in_WorldSize.Width,in_WorldSize.Height);
+            using (Graphics MapGraphics = Graphics.FromImage(Map))
+            {
+                MapGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                MapGraphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+
+                foreach (Rocket Element in in_Rockets)
+                {
+                    MapGraphics.DrawImage(Element.RocketImage, Element.Location.X, Element.Location.Y, Element.Width, Element.Height);
+                    //Debug:显示路径和路径点
+                    MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
+                    foreach (PointF P in Element.CurvePoints)
+                        MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
+                }
+                MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
+            }
+            return Map;
+        }
+
+        public PointF[] CreateBezierPoints(PointF[] KeyPoint)
+        {
+            PointF[] MyPoints = new PointF[] { };
+            using (GraphicsPath MyGraphicsPath = new GraphicsPath())
+            {
+                MyGraphicsPath.AddCurve(KeyPoint);
+                MyGraphicsPath.Flatten();
+                MyPoints = MyGraphicsPath.PathPoints;
+            }
+            return MyPoints;
+        }
     }
 }

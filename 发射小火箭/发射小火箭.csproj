@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BitmapRotator.cs" />
+    <Compile Include="Classes\BitmapController.cs" />
     <Compile Include="Resources\BuildingResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

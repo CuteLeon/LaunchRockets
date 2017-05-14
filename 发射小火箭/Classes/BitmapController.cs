@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
 
 namespace 发射小火箭
 {
-    class BitmapRotator
+    class BitmapController
     {
         /// <summary>
         /// 返回旋转任意角度后的图像
@@ -32,5 +28,21 @@ namespace 发射小火箭
             return ReturnBitmap;
         }
 
+        /// <summary>
+        /// 合并图层
+        /// </summary>
+        /// <param name="Background"></param>
+        /// <param name="Cover"></param>
+        /// <returns></returns>
+        public static Bitmap MergeBitmaps(Bitmap Background, Bitmap Cover)
+        {
+            using (Graphics MergeGraphics = Graphics.FromImage(Background))
+            {
+                MergeGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                MergeGraphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                MergeGraphics.DrawImage(Cover,0,0);
+            }
+            return Background;
+        }
     }
 }

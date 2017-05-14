@@ -26,9 +26,8 @@ namespace 发射小火箭
             GroundTop = (int)(in_WorldSize.Height * 0.9);
         }
 
-        public void Update()
+        public  void Update()
         {
-            throw new NotImplementedException();
         }
     }
 }

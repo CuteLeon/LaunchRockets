@@ -35,7 +35,6 @@
             // GameEngine
             // 
             this.GameEngine.Enabled = true;
-            this.GameEngine.Interval = 200;
             this.GameEngine.Tick += new System.EventHandler(this.GameEngine_Tick);
             // 
             // GameForm
