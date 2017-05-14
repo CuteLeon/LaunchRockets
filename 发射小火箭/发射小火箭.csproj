@@ -47,18 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BitmapRotator.cs" />
-    <Compile Include="Resources\BuildingResource.Designer.cs">
+    <Compile Include="BuildingResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BuildingResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\EnvironmentResource.Designer.cs">
+    <Compile Include="EnvironmentResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnvironmentResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\ExhaustPlumeResource.Designer.cs">
+    <Compile Include="ExhaustPlumeResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ExhaustPlumeResource.resx</DependentUpon>
@@ -69,38 +68,36 @@
     <Compile Include="GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IRocketMove.cs" />
-    <Compile Include="Classes\Map.cs" />
+    <Compile Include="IMove.cs" />
+    <Compile Include="IPathPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Rocket.cs" />
-    <Compile Include="Resources\RocketResource.Designer.cs">
+    <Compile Include="Rocket.cs" />
+    <Compile Include="RocketResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RocketResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Rockets.cs" />
-    <Compile Include="Resources\SkyResource.Designer.cs">
+    <Compile Include="Rockets.cs" />
+    <Compile Include="SkyResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SkyResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\TreeResource.Designer.cs">
+    <Compile Include="TreeResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TreeResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\View.cs" />
-    <Compile Include="Classes\VisualElement.cs" />
-    <EmbeddedResource Include="Resources\BuildingResource.resx">
+    <EmbeddedResource Include="BuildingResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BuildingResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\EnvironmentResource.resx">
+    <EmbeddedResource Include="EnvironmentResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>EnvironmentResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ExhaustPlumeResource.resx">
+    <EmbeddedResource Include="ExhaustPlumeResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ExhaustPlumeResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -117,15 +114,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Resources\RocketResource.resx">
+    <EmbeddedResource Include="RocketResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RocketResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\SkyResource.resx">
+    <EmbeddedResource Include="SkyResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SkyResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\TreeResource.resx">
+    <EmbeddedResource Include="TreeResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TreeResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -142,7 +139,414 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Rocket_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Environment_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Environment_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket_Smoke_9.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
