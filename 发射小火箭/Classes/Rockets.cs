@@ -139,9 +139,9 @@ namespace 发射小火箭
                 {
                     MapGraphics.DrawImage(Element.RocketImage, Element.Location.X, Element.Location.Y, Element.Width, Element.Height);
                     //Debug:显示路径和路径点
-                    MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
-                    foreach (PointF P in Element.CurvePoints)
-                        MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
+                    //MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
+                    //foreach (PointF P in Element.CurvePoints)
+                    //    MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
                 }
                 MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
             }
