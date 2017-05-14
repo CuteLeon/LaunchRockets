@@ -17,17 +17,33 @@ namespace 发射小火箭
         /// 记录小火箭列表
         /// </summary>
         Rockets RocketList;
+        Map GameMap;
 
         public GameForm()
         {
             InitializeComponent();
             this.SetBounds(0, 0, Screen.FromHandle(this.Handle).Bounds.Width, Screen.FromHandle(this.Handle).Bounds.Height);
             RocketList=new Rockets(this.ClientSize);
+            GameMap = new Map(this.ClientSize);
         }
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            Debug.Print( RocketList.ToString());
+            this.BackgroundImage = GameMap.CreateNewMap();
+        }
+
+        private void GameForm_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.BackgroundImage.Dispose();
+            this.BackgroundImage = GameMap.CreateNewMap();
+        }
+
+        private void GameEngine_Tick(object sender, EventArgs e)
+        {
+            //return;
+            this.BackgroundImage.Dispose();
+            this.BackgroundImage = GameMap.UpdateMap();
+            GC.Collect();
         }
     }
 }
