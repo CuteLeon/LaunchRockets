@@ -184,197 +184,23 @@
   <data name="Rocket_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rocket_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rocket_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rocket_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rocket_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rocket_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_53" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_54" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_56" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rocket_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rocket_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_67" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_68" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_69" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rocket_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rocket_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_73" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_73.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_74" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rocket_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_83" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_84" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rocket_86" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Rocket_86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rocket_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Rocket_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -11,7 +11,7 @@ namespace 发射小火箭
         /// <summary>
         /// 小火箭的所有种类总数
         /// </summary>
-        public static int RocketTypeCount = 87;
+        public static int RocketTypeCount = 29;
         /// <summary>
         /// 小火箭图像默认宽度
         /// </summary>
