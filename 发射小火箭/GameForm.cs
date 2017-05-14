@@ -11,8 +11,7 @@ using System.Windows.Forms;
 
 namespace 发射小火箭
 {
-    //TODO:等小火箭在地面停留一段时间之后再发射，发射时加火焰和烟雾
-    //TODO:小火箭消失时太生硬
+    //TODO:发射时加火焰和烟雾
     public partial class GameForm : Form
     {
         /// <summary>
@@ -24,6 +23,7 @@ namespace 发射小火箭
         public GameForm()
         {
             InitializeComponent();
+            this.Icon = (Icon)Resources.RocketResource.LaunchRocket;
             this.SetBounds(0, 0, Screen.FromHandle(this.Handle).Bounds.Width, Screen.FromHandle(this.Handle).Bounds.Height);
             RocketList=new Rockets(this.ClientSize);
             GameMap = new Map(this.ClientSize);

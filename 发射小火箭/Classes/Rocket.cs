@@ -40,16 +40,17 @@ namespace 发射小火箭
         /// <summary>
         /// 当前坐标的序号
         /// </summary>
-        private int pointIndex = 0;
+        private int in_PointIndex = 0;
 
         public int PointIndex
         {
-            get{return pointIndex;}
+            get{return in_PointIndex;}
             set{
-                pointIndex = value;
-                if (pointIndex + 1 < CurvePoints.Length)
+                in_PointIndex = value;
+                if (in_PointIndex>0 && in_PointIndex + 1 < CurvePoints.Length)
                 {
-                    float Angle = (float)Math.Atan2(CurvePoints[pointIndex - 1].X - CurvePoints[pointIndex + 1].X,CurvePoints[pointIndex - 1].Y - CurvePoints[pointIndex + 1].Y);
+                    this.Location = CurvePoints[PointIndex];
+                    float Angle = (float)Math.Atan2(CurvePoints[in_PointIndex - 1].X - CurvePoints[in_PointIndex + 1].X,CurvePoints[in_PointIndex - 1].Y - CurvePoints[in_PointIndex + 1].Y);
                     Angle = (float)(-Angle / (2 * Math.PI) * 360);
 
                     this.RocketImage = BitmapController.GetRotateBitmap(IniBitmap, Angle);
@@ -60,7 +61,7 @@ namespace 发射小火箭
         /// <summary>
         /// 构造函数
         /// </summary>
-        public Rocket(string RocketImageName,Point location)
+        public Rocket(string RocketImageName,Point location,int PointIndex)
         {
             Bitmap TempRocketImage = (Bitmap)Resources.RocketResource.ResourceManager.GetObject(RocketImageName);
             Width =new Random().Next((int)(DefaultWidth* 0.6), TempRocketImage.Width+1);
@@ -69,17 +70,16 @@ namespace 发射小火箭
             IniBitmap = new Bitmap(RocketImage);
             TempRocketImage.Dispose();
             Location =new Point ( location.X, location.Y-Height);
-
-            //Debug.Print("New "
-            //                + RocketImageName 
-            //                + " : ("+Location.X.ToString() + "," + Location.Y+ ")"
-            //                + " ("+ Width+"x"+Height+")");
+            in_PointIndex = PointIndex ;
         }
 
         public void Move()
         {
-            this.Location = CurvePoints[PointIndex];
             PointIndex += 1;
+            if (PointIndex < 0)
+            {
+                Location.X -= 3;
+            }
         }
     }
 }

@@ -47,7 +47,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "发呆专用系列";
+            this.Text = "发射小火箭——[发呆专用系列]";
             this.Load += new System.EventHandler(this.GameForm_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.GameForm_MouseClick);
             this.ResumeLayout(false);
