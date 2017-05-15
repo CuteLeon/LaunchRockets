@@ -135,11 +135,10 @@ namespace 发射小火箭
                     }
                 }
                 if (GameForm.MainForm.ShowElementCount.Checked) {
-                    MapGraphics.DrawString("  元素个数：", new Font("微软雅黑", 20), Brushes.DeepSkyBlue, new Point(100, 100));
-                    MapGraphics.DrawString("   山：" + Mountains.Count .ToString(),new Font ("微软雅黑",18,FontStyle.Bold),Brushes.DeepSkyBlue,new Point (120,150));
-                    MapGraphics.DrawString("建筑：" + Buildings.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(120, 180));
-                    MapGraphics.DrawString("   树：" + Trees .Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(120, 210));
-                    MapGraphics.DrawString("   地：" + Grounds.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(120, 240));
+                    MapGraphics.DrawString("   山：" + Mountains.Count .ToString(),new Font ("微软雅黑",15,FontStyle.Bold),Brushes.DeepSkyBlue,new Point (150,150));
+                    MapGraphics.DrawString("建筑：" + Buildings.Count.ToString(), new Font("微软雅黑", 15, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(150, 180));
+                    MapGraphics.DrawString("   树：" + Trees .Count.ToString(), new Font("微软雅黑", 15, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(150, 210));
+                    MapGraphics.DrawString("   地：" + Grounds.Count.ToString(), new Font("微软雅黑", 15, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(150, 240));
                 }
             }
             return Map;

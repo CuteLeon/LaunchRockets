@@ -66,7 +66,9 @@ namespace 发射小火箭
             DrawXPoint += IndexRandom.Next(50);
             string RocketImageName = "Rocket_" + IndexRandom.Next(Rocket.RocketTypeCount).ToString();
             Rocket NewRocket = new Rocket(RocketImageName, new Point(DrawXPoint, GroundTop), -IndexRandom.Next(100, 200));
-            
+            NewRocket.Location.X -= NewRocket.Width / 2;
+            NewRocket.Location.Y += NewRocket.Height / 2;
+
             NewRocket.CurvePoints = new PointF[6];
             NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X+NewRocket.PointIndex* 3, in_WorldSize.Height * 2);//x2:首个关键点放置在地下深处，使小火箭起飞时更自然
             NewRocket.CurvePoints[1] = new PointF(NewRocket.CurvePoints[0].X, NewRocket.Location.Y);//起飞点
@@ -118,17 +120,20 @@ namespace 发射小火箭
                 MapGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 MapGraphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
 
+                if (GameForm.MainForm.ShowRocketCount.Checked) MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 15, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(150, 300));
+
                 foreach (Rocket Element in in_Rockets)
                 {
-                    MapGraphics.DrawImage(Element.RocketImage, Element.Location.X, Element.Location.Y, Element.Width, Element.Height);
-                    
+                    MapGraphics.DrawImage(Element.RocketImage, Element.Location.X-Element.Width/2, Element.Location.Y-Element.Height/2, Element.Width, Element.Height);
+
                     if (GameForm.MainForm.ShowPath.Checked) MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
                     if (GameForm.MainForm.ShowPoints.Checked)
-                        foreach (PointF P in Element.CurvePoints)
-                            MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
+                    {
+                        foreach (PointF P in Element.CurvePoints.Take(Element.PointIndex)) MapGraphics.FillEllipse(Brushes.DeepSkyBlue, (float)(P.X-1.5), (float)(P.Y-1.5), 3, 3);
+                        for (int Index =(Element.PointIndex>=0? Element.PointIndex:0); Index<Element.CurvePoints.Length;Index++)
+                            MapGraphics.FillEllipse(Brushes.Yellow, Element.CurvePoints[Index].X-2, Element.CurvePoints[Index].Y-2, 4, 4);
+                    }
                 }
-                
-                if (GameForm.MainForm.ShowRocketCount.Checked) MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
             }
             return Map;
         }
