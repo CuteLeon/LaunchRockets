@@ -14,6 +14,7 @@ namespace 发射小火箭
     //TODO:发射时加火焰和烟雾
     public partial class GameForm : Form
     {
+        public static GameForm MainForm;
         /// <summary>
         /// 记录小火箭列表
         /// </summary>
@@ -22,6 +23,7 @@ namespace 发射小火箭
 
         public GameForm()
         {
+            MainForm = this;
             InitializeComponent();
             this.Icon = (Icon)Resources.RocketResource.LaunchRocket;
             this.SetBounds(0, 0, Screen.FromHandle(this.Handle).Bounds.Width, Screen.FromHandle(this.Handle).Bounds.Height);

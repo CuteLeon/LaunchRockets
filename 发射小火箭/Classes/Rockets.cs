@@ -68,12 +68,12 @@ namespace 发射小火箭
             Rocket NewRocket = new Rocket(RocketImageName, new Point(DrawXPoint, GroundTop), -IndexRandom.Next(100, 200));
             
             NewRocket.CurvePoints = new PointF[6];
-            NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X+NewRocket.PointIndex* 3, in_WorldSize.Height );
-            NewRocket.CurvePoints[1] = new PointF(NewRocket.CurvePoints[0].X, NewRocket.Location.Y);
-            NewRocket.CurvePoints[2] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));
-            NewRocket.CurvePoints[3] = new PointF(IndexRandom.Next(in_WorldSize.Width), IndexRandom.Next(GroundTop));
-            NewRocket.CurvePoints[4] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);
-            NewRocket.CurvePoints[5] = new PointF(NewRocket.CurvePoints[4].X,-NewRocket.Height);
+            NewRocket.CurvePoints[0] = new PointF(NewRocket.Location.X+NewRocket.PointIndex* 3, in_WorldSize.Height * 2);//x2:首个关键点放置在地下深处，使小火箭起飞时更自然
+            NewRocket.CurvePoints[1] = new PointF(NewRocket.CurvePoints[0].X, NewRocket.Location.Y);//起飞点
+            NewRocket.CurvePoints[2] = new PointF(IndexRandom.Next(in_WorldSize.Width),IndexRandom.Next(GroundTop));//随机关键点_1
+            NewRocket.CurvePoints[3] = new PointF(IndexRandom.Next(in_WorldSize.Width), IndexRandom.Next(GroundTop));//随机关键点_2
+            NewRocket.CurvePoints[4] = new PointF(IndexRandom.Next(in_WorldSize.Width), 0);//与上边界的交点，也是预计消失点
+            NewRocket.CurvePoints[5] = new PointF(NewRocket.CurvePoints[4].X,-NewRocket.Height);//继续从消失点向上飞行，使消失更自然
             NewRocket.CurvePoints = CreateBezierPoints(NewRocket.CurvePoints);
             in_Rockets.Add(NewRocket);
             return DrawXPoint + NewRocket.Width;
@@ -121,15 +121,14 @@ namespace 发射小火箭
                 foreach (Rocket Element in in_Rockets)
                 {
                     MapGraphics.DrawImage(Element.RocketImage, Element.Location.X, Element.Location.Y, Element.Width, Element.Height);
-                    //Debug:显示路径和路径点
-                    /*
-                    MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
-                    foreach (PointF P in Element.CurvePoints)
-                        MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
-                     */
+                    
+                    if (GameForm.MainForm.ShowPath.Checked) MapGraphics.DrawCurve(Pens.Red, Element.CurvePoints);
+                    if (GameForm.MainForm.ShowPoints.Checked)
+                        foreach (PointF P in Element.CurvePoints)
+                            MapGraphics.FillEllipse(Brushes.Yellow, P.X, P.Y, 3, 3);
                 }
-                //Debug:显示火箭个数
-                //MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
+                
+                if (GameForm.MainForm.ShowRocketCount.Checked) MapGraphics.DrawString("火箭个数：" + in_Rockets.Count.ToString(), new Font("微软雅黑", 18, FontStyle.Bold), Brushes.DeepSkyBlue, new Point(100, 300));
             }
             return Map;
         }
